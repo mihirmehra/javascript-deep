@@ -36,3 +36,12 @@ console.log(url.includes("hir"));
 const spliStr = str.split("-")
 console.log(spliStr)
 
+
+const icons = "☃★♲";
+console.log(icons.codePointAt(1)); // returns the codeof the icon
+
+let str1 = "mihir";
+let str2 = "mehra";
+
+let conStr = str1.concat(" ", str2);
+console.log(conStr);
