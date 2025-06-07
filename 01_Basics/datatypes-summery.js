@@ -54,3 +54,30 @@ const myFunction = function() {
 console.log(typeof myArray); // "object"
 console.log(typeof myObject); // "object"
 console.log(typeof myFunction); // "function"
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// memory
+
+// stack (primitive) , heap (reference)
+
+let memory = "mihirmehra"
+let assignedmemory = memory
+
+assignedmemory = "shaktiman"
+
+console.log(memory);
+console.log(assignedmemory);
+
+
+let user = {
+    email: "mihir@gmail.com",
+    upi: "mihir@123"
+}
+
+let usertwo = user
+
+usertwo.email = "kiara@gmail.com"
+
+console.log(user.email)
+console.log(usertwo.email)
