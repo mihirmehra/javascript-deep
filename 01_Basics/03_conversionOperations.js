@@ -51,3 +51,14 @@ let gameScore = 100;
 // ++gameScore; // prefix increment - the value is incremented before it is used
 
 console.log(gameScore); // undefined
+
+
+let x = 5;
+const y = x++;
+
+console.log(`x: ${x}, y: ${y}`);
+
+let z = 5;
+const c = ++z;
+
+console.log(`z: ${z}, c: ${c}`);
