@@ -16,7 +16,7 @@ const regUser = {
     }
 }
 
-console.log(regUser.fullname)
+// console.log(regUser.fullname)
 
 
 let obj1 = {1: "a", 2: "b"}
@@ -41,14 +41,31 @@ let obj6 = [
     }
 ]
 
-console.log(obj4)
-console.log(obj5)
-console.log(obj6[2].email)
+// console.log(obj4)
+// console.log(obj5)
+// console.log(obj6[2].email)
 
-console.log(tinderuser)
+// console.log(tinderuser)
 
-console.log(Object.keys(tinderuser))
-console.log(Object.values(tinderuser))
-console.log(Object.entries(tinderuser))
+// console.log(Object.keys(tinderuser))
+// console.log(Object.values(tinderuser))
+// console.log(Object.entries(tinderuser))
 
-console.log(tinderuser.hasOwnProperty('isloggedin'))
+// console.log(tinderuser.hasOwnProperty('isloggedin'))
+
+
+// object destrutureing
+
+const course = {
+    name: "js in hindi",
+    price: 1234,
+    instructor: "mihir"
+}
+
+const {name} = course
+const {name: cn} = course
+
+console.log(name)
+console.log(cn)
+
+
