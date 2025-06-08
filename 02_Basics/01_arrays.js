@@ -36,3 +36,6 @@ console.log(sliceArr)
 
 const spliceArr = mainArr.splice(1,4); // menupulate the original array
 console.log(spliceArr)
+
+const newArry = mainArr.concat(3,5,6,7);
+console.log(newArry)
