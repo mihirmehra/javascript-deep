@@ -1,5 +1,5 @@
-// if we create a object with a litreal it will not create a singleton object
-// if we create a object with a constructor it will create a singleton object
+// if we create a object with a litreal it will not create a singleton object => cont obj = {}
+// if we create a object with a constructor it will create a singleton object => cont obj = new Object()
 
 // singleton 
 
