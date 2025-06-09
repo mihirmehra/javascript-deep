@@ -4,7 +4,7 @@
 // }
 
 for (let i = 0; i <= 10; i++){
-    let element = i
+    let element = i 
     if (element == 5){
         // console.log("this is about to 5")
     }
