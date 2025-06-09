@@ -35,7 +35,7 @@ if(bal < 500){
     console.log("less than 1200")
 }
 
-// (&&), (||)
+// (&&), (||) - logical operators
 
 const userLoggedin = true
 const card = true
