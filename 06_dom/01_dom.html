@@ -71,6 +71,14 @@
         // - but node list do not have some array functions
         // Array.from(the HTMLCollection Veriable) -- you can convert the HTMLCollection using this
 
+        let list = [];
+        list = Array.from(document.getElementsByClassName("list-item"))
+        console.log(list)
+
+        list.forEach((item) => {
+            item.innerHTML = "yo yo yo yo"
+        })
+
     </script>
 
 </body>
