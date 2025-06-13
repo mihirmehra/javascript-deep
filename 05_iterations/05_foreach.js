@@ -30,3 +30,4 @@ myObject.forEach((item, index, arr) => {
     }
     console.log(index, item, arr) 
 })
+
