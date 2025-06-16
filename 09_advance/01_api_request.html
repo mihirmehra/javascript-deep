@@ -1,0 +1,56 @@
+<!-- 
+free api 
+
+https://randomuser.me/api
+
+read the api in tree struture (or any other)
+
+https://jsonformatter.org/
+
+// XML Http Request 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request</title>
+</head>
+<body>
+
+
+    
+</body>
+<script>
+    const xhr = new XMLHttpRequest();
+    const requestURL = "https://api.github.com/users/hiteshchoudhary"
+    const cardDiv = document.createElement('div');
+
+    xhr.open('GET', requestURL);
+
+    console.log(xhr.readyState); // 1 (STAGE : OPENED)
+
+    xhr.onreadystatechange = function (){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.response)
+            console.log(data.followers)
+
+            cardDiv.innerHTML = `
+                    <div class="card-head">
+                        <img src='${data.avatar_url}' alt="" style="width: 200px">
+                    </div>
+                    <div class="card-foot">
+                        <p>followers : ${data.followers}</p>
+                    </div>
+                    `;
+            
+            document.body.appendChild(cardDiv)
+        }
+    };
+
+    xhr.send();
+
+</script>
+</html>
