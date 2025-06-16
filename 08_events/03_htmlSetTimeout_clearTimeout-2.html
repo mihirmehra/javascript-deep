@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Async JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="background-color: #414141; color: aliceblue; padding: 20px;">
+
+    <h1>Mihir mehra</h1>
+    <button id='start'>start</button>
+    <button id='stop'>stop</button>
+    
+</body>
+<script>
+    const h1 = document.querySelector('h1')
+
+    // const ChangeText = function(){
+    //   h1.innerHTML = "CHANGED WITH SETINTERVAL"
+    //   console.log("CHANGED text")
+    // }
+
+    const ChangeText = function(str){
+      h1.innerHTML = str
+      console.log("CHANGED text")
+    }
+
+    let changeH1;
+    
+
+    const stopBtn = document.querySelector('#stop')
+    const startBtn = document.querySelector('#start')
+
+    stopBtn.addEventListener('click', function(){
+        clearInterval(changeH1);
+        console.log("stpped setInterval");
+    })
+
+    startBtn.addEventListener('click', function(){
+        changeH1 = setInterval(ChangeText, 1000, "yoy yoyo")
+    })
+
+
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Async JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="background-color: #414141; color: aliceblue; padding: 20px;">
+
+    <h1>Mihir mehra</h1>
+    <button id='stop'>stop</button>
+    
+</body>
+<script>
+    const h1 = document.querySelector('h1')
+
+    // setTimeout(function(){
+    //     console.log("setTimeout function")
+    // }, 3000)
+
+    const changeH1 = setTimeout(function(){
+      h1.innerHTML = "CHANGED WITH SETTIMEOUT"
+    }, 3000)
+
+    const stopBtn = document.querySelector('#stop')
+
+    stopBtn.addEventListener('click', function(){
+        clearTimeout(changeH1);
+        console.log("stpped setTimeout");
+    })
+
+
+</script>
+</html>
